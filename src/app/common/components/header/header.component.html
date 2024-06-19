@@ -1,0 +1,9 @@
+<header>
+    <h2>Practical Task</h2> 
+
+    <div class="nav">
+        <button  mat-raised-button color="primary" [routerLink]="['/login']" *ngIf="isLoginBtn" > Login</button>
+
+         <button  mat-raised-button color="primary" (click)="logout()" *ngIf="isLogoutBtn"> Logout</button>
+    </div>
+</header>

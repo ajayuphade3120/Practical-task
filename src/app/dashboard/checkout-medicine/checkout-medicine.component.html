@@ -1,0 +1,40 @@
+<app-header [isLogoutBtn]="true"></app-header>
+<div class="container">
+    <h1>Medicine Details</h1>
+    <div class="details">
+        <table>
+            <thead>
+                <tr>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngIf="medicinedata?.medicine_name">
+                    <td>Medicine Name</td>
+                    <td><strong>{{ medicinedata.medicine_name }}</strong></td>
+                </tr>
+                <tr *ngIf="medicinedata?.content">
+                    <td>Content</td>
+                    <td><strong>{{ medicinedata.content }}</strong></td>
+                    
+                </tr>
+                <tr *ngIf="medicinedata?.medicine_category">
+                    <td>Medicine Category</td>
+                    <td><strong>{{ medicinedata.medicine_category }}</strong></td>
+                </tr>
+                <tr *ngIf="medicinedata?.mrp">
+                    <td>Price</td>
+                    <td><strong>{{ medicinedata.mrp }}</strong></td>
+                    
+                </tr>
+               
+               
+            </tbody>
+        </table>
+       
+    </div>
+    <button  mat-raised-button color="primary" aria-label="Add Patient" class="fab-button" (click)="openDialog(medicinedata.id)">
+        Place Order
+    </button>
+</div>
+<app-footer></app-footer>

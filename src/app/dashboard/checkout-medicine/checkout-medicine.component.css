@@ -1,0 +1,52 @@
+.container {
+    height: calc(100% - 100px - 50px);
+    text-align: center;
+    overflow-x: auto;
+}
+
+.container h1 {
+    padding-top: 20px;
+}
+
+.container .fab-button {
+    position: fixed;
+    top: 360px;
+    right: 370px;
+}
+
+.details {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.details table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-left: 290px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.details table thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.details table tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.details table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.details table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.details table tbody td strong {
+    color: #333;
+}
